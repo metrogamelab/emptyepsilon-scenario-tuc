@@ -309,7 +309,7 @@ setmetatable(PlayerShipTemplates, {
           return config
         end
       end
-      error("Player ship with name " .. name .. " does not exist")
+      error("Cadet ship with name " .. name .. " does not exist")
     end,
     getByClass = function(self, class)
       local result = {}
@@ -319,7 +319,7 @@ setmetatable(PlayerShipTemplates, {
         end
       end
       if #result == 0 then
-        error("No player ships with class " .. class .. " exist")
+        error("No Cadet ships with class " .. class .. " exist")
       end
       return result
     end,

@@ -116,16 +116,24 @@ _G.GameConfig = Util.mergeTables(_G.GameConfig, {
     },
 
     laneNames = {
-        "Atari Way",
-        "Coleco Channel",
-        "Sega Lane",
-        "Nes Warp",
+        "Atari",
+        "Coleco",
+        "Sega",
+        "Nintendo",
+        "Commodore",
     },
 
     stationNames = {
-        "Academy",
-        "Archive",
+        "Hall",
         "Dormitory",
+        "Community Center",
+        "Dock",
+        "Archive",
+        "Laboratory",
+        "Pavilion",
+        "Library",
+        "Research Building",
+        "Athletics Complex",
     }
 })
 

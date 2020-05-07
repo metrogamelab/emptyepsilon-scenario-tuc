@@ -36,8 +36,8 @@ file is located in. On Linux and Mac use `~/.emptyepsilon`.
 
 ### Game mechanics
 
-* The enemies spawn on the opposite of the green lanes you see on the Strategic Map and fly towards your HQ.
-* If your HQ is destroyed, you loose.
+* The enemies spawn on the opposite of the green lanes you see on the Strategic Map and fly towards your Academy.
+* If the Academy is destroyed, you loose.
 * If you manage to survive 5 Stages (aka you see the "Ready" button for the 6th time) you can consider yourself a winner.
   Make sure to congratulate your players accordingly. The game does not end there just in case you want to go into Endless Mode. :)
 * After every stage there is a break. The players get one option to improve their ship. When every one pressed the "Ready" Button, the next stage will start.
@@ -51,5 +51,5 @@ file is located in. On Linux and Mac use `~/.emptyepsilon`.
 * Stations restock and recharge everything when the players dock. But they decline service when there are enemies within 5u.
 * When a player ship is destroyed their ship will respawn after half a minute. But that time increases every time they die.
 * The callsigns of the enemy will consist of the first letter of their type and blocks that indicate the health of their hull.
-* Chat with HQ to see your teams kill count.
+* Chat with Academy to see your teams kill count.
 * There are some settings in the `scenario_01_tuc.lua` file that you can use to set player ship names and tweak the difficulty of the waves.

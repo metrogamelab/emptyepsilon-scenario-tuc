@@ -5,7 +5,7 @@ template:setShields()
 template:setRadarTrace("radartrace_mediumstation.png")
 template:setSpeed(0, 0, 0)
 template:setSharesEnergyWithDocked(true)
-template:setDockClasses("Player")
+template:setDockClasses("Academy")
 template:setEnergyStorage(999999999)
 
 template = ShipTemplate():setName("Large Station"):setLocaleName(_("Large Station")):setModel("space_station_2"):setType("station")
@@ -15,7 +15,7 @@ template:setShields()
 template:setRadarTrace("radartrace_largestation.png")
 template:setSpeed(0, 0, 0)
 template:setSharesEnergyWithDocked(true)
-template:setDockClasses("Player")
+template:setDockClasses("Academy")
 template:setEnergyStorage(999999999)
 
 local PlayerTemplate = function()
@@ -42,7 +42,7 @@ for _, conf in pairs(PlayerShipTemplates) do
         if color ~= PlayerShipColors[1] then
             name = name .. " " .. color
         end
-        template = PlayerTemplate():setName(name):setClass("Player", conf.class):setModel(conf.model..color)
+        template = PlayerTemplate():setName(name):setClass("Academy", conf.class):setModel(conf.model..color)
         if color ~= PlayerShipColors[1] then
             -- playerships are hidden from the database. No need to have every color variation there.
             template:setType("playership")
@@ -121,7 +121,7 @@ end
 require("config/enemies.lua")
 
 for _, conf in pairs(EnemyShipTemplates) do
-    template = EnemyTemplate():setName(conf.name):setClass("Enemy", conf.class):setModel(conf.model)
+    template = EnemyTemplate():setName(conf.name):setClass("Unknown", conf.class):setModel(conf.model)
     template:setRadarTrace(conf.radarTrace)
     template:setDescription(conf.description)
     template:setHull(conf.hull)

@@ -2,7 +2,7 @@ local MyStation = function(templateName, x, y)
     -- needs to be a CpuShip to have beams
     local station = CpuShip():
     setTemplate(templateName):
-    setFaction("Player"):
+    setFaction("Academy"):
     setPosition(x, y):
     setRotation(math.random(0,359)):
     setShieldsMax():
@@ -39,7 +39,7 @@ My.EventHandler:register("onWorldCreation", function()
     local x, y = 0, 0
 
     local station = MyStation("Large Station", x, y)
-    station:setCallSign("HQ")
+    station:setCallSign("Academy")
     My.EventHandler:fire("onStationSpawn", station)
 
     Cron.regular(function()
@@ -138,9 +138,9 @@ My.EventHandler:register("onWorldCreation", function()
             return Zone():setPoints(table.unpack(points))
         end)()
 
-        zone:setFaction("Player")
+        zone:setFaction("Academy")
         zone:setColor(31,63,31)
-        zone:setLabel(GameConfig.laneNames[i] or ("Lane" .. i))
+        zone:setLabel(GameConfig.laneNames[i] or ("Campus" .. i))
 
         local spawnAngle = Util.angleFromVector(x3 - x4, y4 - y4)
         table.insert(My.World.lanes, {
